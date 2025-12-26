@@ -76,6 +76,31 @@ function HomeScroll({ children }) {
         background: "#0f0f0f"
       }}
     >
+          {/* 🔷 TOP BAR */}
+      <div
+        style={{
+          position: "sticky",
+          top: 0,
+          zIndex: 5,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          padding: "10px 12px",
+          background: "#0f0f0f"
+        }}
+      >
+        {/* App icon + name */}
+        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          <img
+            src="/icons/icon-192.png"
+            alt="App logo"
+            style={{ width: 28, height: 28, borderRadius: 6 }}
+          />
+          <span style={{ fontSize: 16, fontWeight: 600 }}>
+            My TV
+          </span>
+        </div>
+        </div>
       <div style={{ padding: "0 12px 40px" }}>
         {children}
       </div>
